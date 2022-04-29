@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino 3 Eventos Dom</title>
+    <style>
+        div#area{
+            background: rgb(70, 116, 1);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Treino 3 Eventos DOM</h1>
+    <div id="area">
+        Interaja....
+    </div>
+    <script>
+        
+            var a = document.getElementById('area')
+            a.addEventListener('clik', clicar)
+            a.addEventListener('mouseenter', entrar)
+            a.addEventListener('mouseout', sair)
+            
+            function clicar(){
+                a.innerText = 'ENTROU!!!!!'
+                a.style.background = 'green'
+            }
+
+            function entrar(){
+                a.innerText = 'ENTROU!!!!!'
+                a.style.background = 'pink'
+            }
+            
+            function sair(){
+                a.innerText = 'SAIU!!!!'
+                a.style.background = 'blue'
+            }
+        
+
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nome.length</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            color:white;
+            background-color: rgb(67, 43, 226);
+        }
+        main {
+            height:1000px;
+            width: 1000px;
+            background-color:black;
+            margin: auto;
+            color: white;
+            text-align: center;
+            padding: 50px;
+
+        }
+        p {
+            color:chartreuse;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        h2 {
+            padding: 30px;
+        }
+        ul {
+            padding: 50px;
+        }
+        strong {
+            color: chartreuse;
+        }
+        
+        
+            
+            
+
+        
+        
+
+    </style>
+</head>
+<body>
+    <h1>Formatção de String com Length/toUpperCase e toLowerCase</h1>
+    <p>Vamos utilizar</p>
+    <ul>
+        <li>Length</li><p>Quantas letras</p>
+        <li>toUpperCase</li><p>Letras Maiusculas</p>
+        <li>toLocaleLowerCase</li><p>Letras Minusculas</p>
+    </ul>
+    
+    <main>
+     <h4>
+        <ul>
+            <li>var nome = window.prompt('Qual é seu nome')</li>
+            <li>document.write(` Olá,${nome}! Seu nome tem <strong>${nome.length}</strong> letras.`)</li>
+            <li>document.write(` Seu nome vai ficar em maiusculo ( <strong>${nome.toUpperCase</strong>()})<br>`)</li> 
+            <li>document.write(`Seu nome ${nome}! em minuscula <strong>${nome.toLocaleLowerCase</strong> ()})`)</li> 
+         </ul>    
+         
+    <script>
+        
+        var nome = window.prompt('Qual é seu nome')
+        document.write(` Olá,${nome}! Seu nome tem <strong> ${nome.length}</strong> letras.<br>`)
+        document.write(` Seu nome vai ficar em <strong> maiusculo </strong> ( ${nome.toUpperCase()})<br>`)
+        document.write(`Seu nome ${nome}! em <strong>minuscula</strong> (${nome.toLocaleLowerCase ()})`)
+ 
+        
+        
+    </script>
+    </h4>
+    </main>
+
+    
+    
+</body>
+</html>

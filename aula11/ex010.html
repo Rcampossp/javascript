@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        body{
+            background-color: chocolate;
+            margin-left: 500px;
+        }
+        input{
+            border-radius: 5px;
+            width: 150px;
+            height: 50px;
+        }
+        strong{
+            font-size: 2em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div#res{
+            font-size: 28px;
+            font-family: 'Times New Roman', Times, serif;
+            width: 300px;
+            height:80px;
+            background: blue;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+        p input{
+            font-size: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multa</h1>
+    <strong>Velocidade do Carro:</strong><p><input type="number" name="txtvel" id="txtvel">KM/h</p>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+        
+    </div>
+
+    <script>
+        function calcular(){
+        var tvel = document.getElementById('txtvel')
+        var res = document.querySelector('div#res')
+        var vel = Number(tvel.value)
+        res.innerHTML = `Sua velocidade atual é de ${vel}Km/h`
+        }
+    </script>
+    
+</body>
+</html>

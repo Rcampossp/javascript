@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soma de valores js</title>
+</head>
+<body>
+    <h1> "Somando valores em JS"</h1>
+    <h2>Primeira parte dentro do HTML</h2>
+    <p>Para efetuarmos soma de valores dentro do Jscript, devemos primeiramente iniciarmos com as tag <br> <strong>input</strong>.Esta primeira parte é inserira/criada dentro do HTML.</p>
+    <p>&lt;input type = number" name = "..." id = "....."&gt;<br>que vai formar um campo como este: Onde poderemos inserir valores.</p>
+    <input type="number" name="txtn2" id="txtn1"> +
+    <p>Criaremos outro campo pois iremos trabalhar com soma de valores. <br><input type="number" name="txtn2" id="txtn2"></p>
+    <p>Vamos Utilizar outro input como "Botão"<br>&ltinput type = button" value = "somar" onclick="somar()"&gt.</p>
+    <input type="button" value="SOMAR" onclick = "somar()">
+    <p>Agora Criaremos uma div  com Id (res)para receber o resultado. <br>&lt;div id = "res"&gt;RESULTADO&lt;/div&gt;</p>
+    <div id="res">Resultado</div>
+    <p>Nossa primeira parte no HTML fica assim, vamos agora para outa parte que é a criação das variaveis dentro do Jscript</p>
+    <h1>Criação do JavaScript</h1>
+    <h2>Vamos criar as variavéis dentro do Js para se integrar com o HTML</h2>
+    
+    <p>&lt;var    tn1 =    document.getElementById('txtn1')&gt;</p>
+    
+    <p>&lt;var    tn2 =    document.getElementById('txtn2')&gt;</p>
+    
+    <p>&lt;var    res =    document.getElemetById&gt;('res')&gt;</p>
+    <p>&lt;var    n1  =    number('tn1.value')&gt;</p>
+    <p>&lt;var    n2  =    number('tn2.value')&gt;</p>
+    <p>&lt;var    s   =    n1    +      n2&gt;</p>
+    res.innerHTML =`A soma entre ${n1}e ${n2}é igual a ${s}`
+    
+</body>
+</html>
